@@ -64,9 +64,6 @@ mapping.preset.insert = function(override)
     ['<C-y>'] = {
       i = mapping.confirm({ select = false }),
     },
-    ['<C-e>'] = {
-      i = mapping.abort(),
-    },
   })
 end
 
@@ -122,9 +119,6 @@ mapping.preset.cmdline = function(override)
           fallback()
         end
       end,
-    },
-    ['<C-e>'] = {
-      c = mapping.abort(),
     },
     ['<C-y>'] = {
       c = mapping.confirm({ select = false }),

@@ -41,7 +41,7 @@ end)
 autocmd.emit('ColorScheme')
 
 if vim.on_key then
-  local control_c_termcode = vim.api.nvim_replace_termcodes('<C-c>', true, true, true)
+  local control_c_termcode = vim.api.nvim_replace_termcodes('<C-e>', true, true, true)
   vim.on_key(function(keys)
     if keys == control_c_termcode then
       vim.schedule(function()
